@@ -7,6 +7,7 @@ public class Hello {
 		System.out.println("Here ye Here ye: important message");
 		
 		System.out.println("The current date is: " + getDate());
+		System.out.println("You have " + Runtime.getRuntime().freeMemory() + " bytes of free memory.");
 		
 		System.out.println("Conflict Resolved!");
 		
