@@ -1,8 +1,12 @@
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Hello {
 
 	public static void main(String[] args) {
 		System.out.println("Here ye Here ye: important message");
+		
+		System.out.println("The current date is: " + getDate());
 		
 		System.out.println("Conflict Resolved!");
 		
@@ -11,4 +15,9 @@ public class Hello {
 		System.out.println("See ya later!");
 	}
 
+	public static String getDate(){
+		SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+		Date today = new Date();
+		return format.format(today);
+	}
 }
